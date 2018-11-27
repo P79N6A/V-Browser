@@ -1,3 +1,5 @@
+## This Project Is Currently On A Undefined Hiatus Till Further Notice
+
 # V-Browser
 V-Browser is a WIP Android Web Browser with the goal of adding security and flexibility to the user's browser experience.
 
