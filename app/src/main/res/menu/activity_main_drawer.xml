@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/app_name">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_action_home"
+                    android:title="@string/action_home" />
+                <item
+                    android:id="@+id/nav_tab_new"
+                    android:icon="@drawable/ic_action_new"
+                    android:title="New Tab" />
+                <item
+                    android:id="@+id/nav_bookmarks"
+                    android:icon="@drawable/ic_action_collection"
+                    android:title="Bookmarks" />
+                <item
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/ic_action_event"
+                    android:title="History" />
+                <item
+                    android:id="@+id/nav_downloads"
+                    android:icon="@drawable/ic_action_download"
+                    android:title="Downloads" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_experimental_options"
+        android:title="Experimental Options"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_user_agent"
+                android:icon="@drawable/ic_action_accounts"
+                android:title="User Agent" />
+            <item
+                android:id="@+id/nav_adblock"
+                android:icon="@drawable/ic_action_labels"
+                android:title="Adblock" />
+        </menu>
+    </item>
+
+    <item android:title="Help &#38; Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_action_settings"
+                android:title="App Settings" />
+            <item
+                android:id="@+id/nav_report_problem"
+                android:icon="@drawable/ic_action_warning"
+                android:title="Report A Problem" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_action_help"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_action_power"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.vengine.v_browser.core.fragments.WebViewFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/webViewProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-7dp" />
+
+        <tech.vengine.v_browser.core.miscellaneous.CustomWebView
+            android:id="@+id/browserWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNavLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:id="@+id/bottomNavLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/black">
+
+            <ImageButton
+                android:id="@+id/overflowMenuButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/overflow_button"
+                android:paddingEnd="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="0dp"
+                android:paddingStart="2dp"
+                android:src="@drawable/ic_action_overflow"
+                android:tint="@color/colorTextWhite" />
+
+            <ImageButton
+                android:id="@+id/refreshButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/overflowMenuButton"
+                android:layout_toStartOf="@+id/overflowMenuButton"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/refresh_button"
+                android:src="@drawable/ic_action_refresh"
+                android:tint="@color/colorTextWhite" />
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/ic_action_back"
+                android:tint="@color/colorTextWhite" />
+
+            <ImageButton
+                android:id="@+id/forwardButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/backButton"
+                android:layout_toRightOf="@+id/backButton"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/overflow_button"
+                android:paddingEnd="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="0dp"
+                android:paddingStart="2dp"
+                android:src="@drawable/ic_action_forward"
+                android:tint="@color/colorTextWhite" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

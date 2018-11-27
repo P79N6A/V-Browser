@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/button_selector">
+
+    <PreferenceCategory android:title="Pin Settings">
+        <tech.vengine.v_browser.core.miscellaneous.EditTextIntegerPreference
+            android:dependency="SKIP_PIN_SCREEN"
+            android:dialogMessage="Please type in a new 4 digit pin. \nNote pin must be 4 digits long!"
+            android:dialogTitle="Set Pin"
+            android:key="USER_PIN"
+            android:maxLength="4"
+            android:summary="Change your lock screen pin."
+            android:title="User Pin" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="SKIP_PIN_SCREEN"
+            android:summary="Enabling this will allow you to skip past the pin screen or decoy depending on what your using and load directly into WebLockr.\n\nNote: This does not reset your pin!"
+            android:title="Skip Pin Screen" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

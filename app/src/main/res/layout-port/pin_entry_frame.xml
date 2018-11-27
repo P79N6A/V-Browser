@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pinParentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical"
+    tools:context=".core.activities.PinEntryActivity">
+
+    <LinearLayout
+        android:id="@+id/pinLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/pinDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <include layout="@layout/pin_entry_top" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/KeypadLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:id="@+id/statusMessageLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#33B5E5"
+                android:clipChildren="true">
+
+                <TextView
+                    android:id="@+id/statusMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/pin_entry_bottom" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
